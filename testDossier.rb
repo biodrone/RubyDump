@@ -12,4 +12,3 @@ Rob_Brindley.name = "Rob Brindley"
 puts Rob_Brindley.name
 puts Rob_Brindley.phone
 puts Rob_Brindley.facebook
-puts"LOL!"

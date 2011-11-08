@@ -16,7 +16,7 @@ end
 class Snake < Pet
  attr_accessor :length
 end
- 
+
 snake = Snake.new
 snake.name = "Sammy"
 snake.length = 500
