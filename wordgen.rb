@@ -4,7 +4,7 @@ class Set_Letters
  attr_accessor :a, :b, :c
  def doit
   26.times {
-	puts(a)
+	puts(a) #change something to do with how it refers to what it 'puts'
 	a = a.next
 }
  end
