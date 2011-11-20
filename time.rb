@@ -2,7 +2,7 @@
 #a program to predict the future...
 
 class Fixnum
-	def Seconds
+	def seconds
 		self
 	end
 	def minutes
@@ -17,8 +17,10 @@ class Fixnum
 end
 t = Time.now
 t_cl = t.hour.to_s + ":" + t.min.to_s + ":" + t.sec.to_s
-#puts t_cl
-puts "The time is now " + t_cl.to_s
-puts "The time in ten minutes will be " + (t_cl + 10.minutes).to_s #if 10.minutes has .to_s, it adds to secs instead
-puts "The time in sixteen hours will be " + (t_cl + 16.hours).to_s
-puts "The time last week was " + (t_cl - 7.days).to_s
+puts "The time is now " + t_cl
+t = t + 10.minutes
+t_cl = t.hour.to_s + ":" + t.min.to_s + ":" + t.sec.to_s
+puts "The time in ten minutes will be " + t_cl
+t = t + 16.hours
+t_cl = t.hour.to_s + ":" + t.min.to_s + ":" + t.sec.to_s
+puts "The time in sixteen hours will be " + t_cl
