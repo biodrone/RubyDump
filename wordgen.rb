@@ -1,23 +1,12 @@
-#!usr/bin/ruby
+#!/usr/bin/ruby
 
-class Set_Letters
- attr_accessor :a, :b, :c
- def doit
-  26.times {
-	puts(a) #change something to do with how it refers to what it 'puts'
-	a = a.next
+letter = "a"
+puts "How many lines do you want to have?"
+lines = gets.chomp.to_i
+count = 1
+
+lines.times {
+	puts "Writing line: " + count.to_s
+	count += 1
+	letter = letter.next
 }
- end
-end
-class Dotheloop
- def doit
-  26.times {
-   puts(Set_Letters.a)
-   Set_Letters.a = Set_Letters.a.next
-end
-
-loop = Set_Letters.new
-loop.a = "a"
-loop.b = "a"
-loop.c = "a"
-Dotheloop.doit
