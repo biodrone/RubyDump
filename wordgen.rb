@@ -6,7 +6,7 @@ lines = gets.chomp.to_i
 count = 1
 
 lines.times {
-	puts "Writing line: " + count.to_s
+	puts "Line: " + count.to_s + " = " + letter
 	count += 1
 	letter = letter.next
 }
